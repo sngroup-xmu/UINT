@@ -18,13 +18,14 @@ This repository contains:
 ## **Geting Started:**
 
 ### **1. SMT encoding：**
-- We use src/encoder/Encoder.py to define the input and output SMT variables as __in_vars_, __out_vars_, and the network encoding variables as_ _nn_vars_.
+- We use src/encoder/Encoder.py to define the input and output SMT variables as __in_vars_, __out_vars_,
+the network encoding variables as_ _nn_vars_.
 
 - Network model encodings are defined as __nn_constrs_:
-Input and output layers are valid ranges for input and output variables, then step-by-step layered coding to add intermediate variables.
+input and output layers are valid ranges for input and output variables, then step-by-step layered coding to add intermediate variables.
 
 - Properties encoding are defined as __in_out_constrs_: 
-Use the functions argmax_eq_constr(), argmax_neq_constr(), eq_constr(), approximate_eq_constr(), assign_constr(), boundary_constr(), discrete_constr(), etc. to complete the property encoding.
+use the functions argmax_eq_constr(), argmax_neq_constr(), eq_constr(), approximate_eq_constr(), assign_constr(), boundary_constr(), discrete_constr(), etc. to complete the property encoding.
 
 ### **2. Verify and interpret the specific system**
 Execute **python pensieve.py/aurora.py** file in src/exp directory to implement each property verification and interpretation problem.
