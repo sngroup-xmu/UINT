@@ -17,9 +17,9 @@ This repository contains:
 
 ## **Geting Started:**
 
-### **1. SMT encoding：**
+### **1. SMT encoding**
 - We use src/encoder/Encoder.py to define the input and output SMT variables as __in_vars_, __out_vars_,
-the network encoding variables as_ _nn_vars_.
+the network encoding variables as __nn_vars_.
 
 - Network model encodings are defined as __nn_constrs_:
 input and output layers are valid ranges for input and output variables, then step-by-step layered coding to add intermediate variables.
